@@ -1,0 +1,12 @@
+name: custom action
+
+on: [push]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout action
+        uses: actions/checkout@v2
+      - name: Custom action
+        uses: Mariscurrena/Fourth-Challenge-GitHub-Actions_P1@main
